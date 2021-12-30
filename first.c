@@ -31,22 +31,4 @@ int main(){
     tr1.btr = 45;
     tr1.btl=90;
     printf("%d",calcAngle(tr1.btr,tr1.btl));
-
-
-    char name[10][10];
-    char *ptr[10];
-
-    for(int i=0;i<10;i++){
-        scanf("%9s",&name[i]);
-        ptr[i]=*name;
-        fflush(stdin);
-    }
-
-    for(int i=0;i<10;i++){
-        if(&ptr[i]!=NULL){
-            printf("%d %s %p \n",i,name[i],&ptr[i]);
-        }
-    }
-
-
 }
